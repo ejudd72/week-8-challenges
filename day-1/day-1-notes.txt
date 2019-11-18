@@ -1,0 +1,51 @@
+#Day 1 - 
+
+Setup: 
+Running PHP in command line. Create a file with .php extension and then call in command line with php   {filename.php}. 
+
+File should begin with <?php - never put anything before it, including comments or spaces or anything. Laravel can freakout with this. 
+
+
+##Classes in PHP
+class = template for creating instance of object. classes have the same properties and methods. 
+
+Person class
+start with <?php 
+
+class Person    //note capital for class name
+{               //note the curly braces start on next line for classes, but with if statements they stay on the first line. bit inconsistent }
+
+differences: 
+arrow instead of dot. - they're synonymous
+Dollars everywhere - for variables. 
+public and private - 
+__construct  - this syntax is called a magic method. 
+
+You can declare properties in a class outside of a constructor. 
+in javascript methods are properties so you couldn't call both the same name, whereas in PHP you can use both with the same name and it wouldn't be a provlem because they work differently. 
+
+You don't get nested ovjeccts and object literals in php because you use associative arrays (arrays with keys and values) instead. 
+
+setter methods: always return this so that you can chain it. 
+
+You should declare properties at top of class, you can give them default values but you don't always need/want to. 
+
+you can't set a property to a new object without lots of complication (to be covered tomorrow). you can set it to numbers booleans strings etc. 
+
+Visibility: 
+private: you can only access by using $this-> and because you can only do that within the specific class you can't do it. Its useful so that it enforces using setLastName etc functions (which alllow you control to give extra control e.g. checking name is capitalised)
+
+generally always make your properties private (unless, later on, you are using inheritance) - this is for encapsulation(for later lesson)
+
+Static methods and properties: 
+function to pass array of people and it gives back all last names. 
+A method that. rather than dealign with specific instance of object, instead does something with the whole class itself. Statis stuff goes at top of a class. 
+
+To use a statis function you use Classname::staticfunctionname([array, blah, blah]);
+
+you can't use 'this' inside a static function
+
+calling another static method inside a static method by calling static::functionName();
+
+
+
