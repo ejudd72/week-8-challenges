@@ -6,7 +6,8 @@ class Phone
     private $make;
     private $model;
 
-    public function __construct($make, $model){
+    public function __construct($make, $model)
+    {
         $this->make = $make;
         $this->model = $model;
     }

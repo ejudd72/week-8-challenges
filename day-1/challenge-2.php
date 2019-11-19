@@ -3,12 +3,7 @@
 // ... your class here
 class LightSwitch 
 {
-    private $isOn;
-
-    public function __construct()
-    {
-        $this->isOn = false;
-    }
+    private $isOn = false;
 
     public function isOn()
     {

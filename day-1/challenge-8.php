@@ -5,7 +5,7 @@ class Person
     {
         // use reduce to add up the ages of all the people
         $total = array_reduce($people, function ($total, $person) {
-            return $total + $person->age();
+            return $total + $person->getAge();
         }, 0);
         return $total / count($people);
     }
@@ -16,7 +16,7 @@ class Person
         $this->name = $name;
         $this->age = $age;
     }
-    public function age()
+    public function getAge()
     {
         return $this->age;
     }
