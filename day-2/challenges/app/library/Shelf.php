@@ -20,5 +20,10 @@ class Shelf
         }, $this->books);
         return $titles;
     }
+
+    public function books()
+    {
+        return $this-> $books;
+    }
 }
 
