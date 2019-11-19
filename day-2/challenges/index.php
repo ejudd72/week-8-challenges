@@ -20,3 +20,21 @@ $person2 = new Person("Wes", "Anderson");
 
 dump($person1->sayHelloTo($person2)); // string(9) "Hello Wes Anderson"
 dump($person2->sayHelloTo($person1)); // string(11) "Hello Lynne Ramsay"
+
+echo "\nQuestion 3:\n";
+
+use App\Stuff\Things\Potato;
+
+$potato = new Potato();
+$potato->water()->water();
+
+dump($potato->hasGrown()); // false
+
+$potato->water()->water();
+dump($potato->hasGrown()); // false
+
+$potato->water();
+dump($potato->hasGrown()); // true
+
+$potato->water()->water();
+dump($potato->hasGrown()); // true
